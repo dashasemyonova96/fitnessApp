@@ -12,5 +12,6 @@ namespace FitnessApp.Models
 		public int Price { get; set; }
 		public int AmountDays { get; set; }
 		public int PauseDays { get; set; }
+		public virtual ICollection<Purchase> Purchases { get; set; }
 	}
 }

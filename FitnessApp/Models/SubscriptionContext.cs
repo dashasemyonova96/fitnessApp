@@ -13,8 +13,6 @@ namespace FitnessApp.Models
 	*/
 	public class SubscriptionContext : DbContext
 	{
-		public SubscriptionContext() : base("DefaultConnection")
-		{ }
 		public DbSet<Subscription> Subscriptions { get; set; } //свойство типа DbSet (типизировано моделью Subscription)
 		public DbSet<Purchase> Purchases { get; set; }
 
@@ -28,7 +26,6 @@ namespace FitnessApp.Models
 	 * Мы должны запустить инициализатор при старте приложения (Global.asax)
 	 */
 	public class SubscriptionDbInitializer : DropCreateDatabaseAlways<SubscriptionContext> //типизирован классом контекста. 
-		//При каждом запуске пересоздает бд
 	{
 		protected override void Seed(SubscriptionContext context)
 		{

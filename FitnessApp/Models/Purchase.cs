@@ -10,6 +10,7 @@ namespace FitnessApp.Models
 		public int PurchaseId { get; set; }
 		public string Person { get; set; } //фио клиента, который купил абонемент
 		public int SubscriptionId { get; set; } //ссылка на абонемент
+		//public virtual Subscription Subscription { get; set; }		
 		public DateTime Date { get; set; }
 	}
 }

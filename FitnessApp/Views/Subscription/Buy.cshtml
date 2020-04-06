@@ -1,0 +1,19 @@
+﻿@model int
+@{
+    ViewBag.Title = "Покупка абонемента";
+}
+
+<div>
+    <h3>Форма оформления покупки абонемента</h3>
+    <form method="post" action="">
+        <input type="hidden" value="@Model" name="SubscriptionId" />
+        <table>
+            <tr>
+                <td><p>Введите имя: </p></td>
+                <td><input type="text" name="Person" /> </td>
+            </tr>
+            <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+        </table>
+    </form>
+</div>
+

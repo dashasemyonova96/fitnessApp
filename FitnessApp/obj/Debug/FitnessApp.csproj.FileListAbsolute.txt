@@ -124,3 +124,7 @@ C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\obj\Debug\Fitne
 C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\obj\Debug\FitnessApp.csproj.CopyComplete
 C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\obj\Debug\FitnessApp.dll
 C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\obj\Debug\FitnessApp.pdb
+C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\bin\System.Web.Http.dll
+C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Professional\Documents\FitnessApp\fitnessApp\FitnessApp\bin\System.Web.Http.xml

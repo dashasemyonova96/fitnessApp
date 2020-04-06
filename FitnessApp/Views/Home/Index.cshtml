@@ -1,23 +1,13 @@
 ﻿@{
-	ViewBag.Title = "Абонементы";
+    ViewBag.Title = "Home Page";
 }
+
 <div>
-    <h3>Приобретай прямо сейчас!</h3>
-    <table>
-        <tr>
-            <td><p>Название</p></td>
-            <td><p>Цена</p></td>
-            <td><p>Количество дней</p></td>
-            <td><p>Количество дней заморозки</p></td>
-        </tr>
-        @foreach (var subscription in ViewBag.Subscr)//Razor - движок представлений, который позволяет с html перейти к c#
-		{ 
-            <tr>
-                <td><p>@subscription.Name</p></td>
-                <td><p>@subscription.Price</p></td>
-                <td><p>@subscription.AmountDays</p></td>
-                <td><p>@subscription.PauseDays</p></td>
-            </tr>
-        }
-    </table>
+    <h3>Главная страница</h3>
+    <style>
+		body {
+			background: #C6E2FF; /* Цвет фона и путь к файлу */
+		}
+    </style>
+    
 </div>
