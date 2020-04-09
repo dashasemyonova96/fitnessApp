@@ -1,7 +1,35 @@
-﻿
+﻿@model IEnumerable<FitnessApp.Models.Client>
 @{
-    ViewBag.Title = "Show";
+	ViewBag.Title = "Клиенты";
 }
 
-<h2>Show</h2>
+	<div>
+		<h3>Клиенты</h3>
+		<button name="button">Добавить</button>
+		<table class="table">
+			<tr>
+				<td><p>Фамилия</p></td>
+				<td><p>Имя</p></td>
+				<td><p>Отчество</p></td>
+				<td><p>Пол</p></td>
+				<td><p>Дата рождения</p></td>
+				<td></td>
+			</tr>
+			@foreach (var client in Model)//Razor - движок представлений, который позволяет с html перейти к c#
+			{
+				<tr>
+					<td><p>@client.FirstName</p></td>
+					<td><p>@client.MiddleName</p></td>
+					<td><p>@client.LastName</p></td>
+					<td><p>@client.Sex</p></td>
+					<td><p>@client.Birthday</p></td>
+					<td>
+						<p>
+							@Html.ActionLink("Профиль", "OpenProfile", new { clientId = client.Id })
+						</p>
+					</td>
+				</tr>
+			}
+		</table>
+	</div>
 
